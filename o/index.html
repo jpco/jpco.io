@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Jack Conger</title>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300' rel='stylesheet' type='text/css'>
+		<style>
+			body { 
+				font-family: 'Raleway', sans-serif;
+			}
+			#title {
+				color: white;
+				background-color: black;
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 130pt;
+				font-size: 60pt;
+				width: 6em;
+				text-align: center;
+			}
+			#navbar {
+				color: white;
+				text-align: center;
+				padding-top: 1em;
+				width: 22em;
+				margin-left: auto;
+				margin-right: auto;
+				font-size: 30pt;
+/*				background-color: #faa; */
+			}
+			#sep {
+				color: white;
+				color: #bbbbbb;
+				display: inline-block;
+			}
+			.navlink {
+				color: black;
+				display: inline-block;
+				margin-left: 1.5ex;
+				margin-right: 1.5ex;
+				padding-left: .5ex;
+				padding-right: .5ex;
+				text-align: center;
+/*				background-color: #afa; */
+			}
+			a:link {
+				text-decoration: none;
+				color: black;
+			}
+			a:hover.navlink {
+				color: white;
+				background-color: black;
+			}
+			#bio {
+				font-size: 14pt;
+				font-family: "Open Sans", sans-serif;
+				text-align: center;
+				color: white;
+				visibility: hidden;
+				width: 30em;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		</style>
+		<script>
+			function bio_off() {
+				document.getElementById('bio').style.color = "white";
+				document.getElementById('bio').style.visibility = "hidden";
+			}
+			function bio_on() {
+				document.getElementById('bio').style.visibility = "visible";
+				document.getElementById('bio').style.color = "black";
+			}
+		</script>
+	</head>
+	<body id="body">
+		<div id="compatmessage">You're seeing this website in compatibility mode! You should probably upgrade your browser!</div>
+		<div id="title" onmouseover="bio_on()" onmouseout="bio_off()">Jack Conger</div>
+		<div id="navbar">
+			<a class="navlink" id="computers" href="sw/">Software Developer</a>
+			<a id="sep">&#47;</a>
+			<a class="navlink" id="theatre" href="sound/">Sound Designer</a>
+		</div>
+		<p id="bio">
+		My name is Jack Conger. I live in Seattle and attend the University of Washington, where I study mathematics and computer science. I work with the UW physics department developing software for use testing pixel detection chips, and I help maintain the website Hiibye. I also work with the UW Undergraduate Theatre Society and elsewhere as a sound designer and composer. This is my website.
+		</p>
+	</body>
+</html>

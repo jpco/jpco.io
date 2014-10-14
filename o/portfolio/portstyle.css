@@ -1,0 +1,16 @@
+/* external CSS used for the main content pages of the site. */
+
+#content {
+	font-size: 14pt;
+	font-family: "Open Sans", sans-serif;
+	color: black;
+}
+#content p {
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#sidebar {
+	width: 17em;
+}

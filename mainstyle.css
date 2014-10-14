@@ -1,0 +1,177 @@
+/* external CSS used for the main content pages of the site. */
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:100,300|Open+Sans:300italic,300,600);
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 100;
+}
+
+h1, h2 {
+	font-family: 'Raleway', sans-serif;
+	margin-top: 1em;
+	margin-left: 1.5em;
+}
+h1 {
+	font-weight: 100;
+	white-space: nowrap;
+	display: inline-block;
+	padding-left: 1ex;
+	padding-right: 1ex;
+}
+h1.black {
+	color: white;
+	background-color: black;
+}
+h2 {
+	font-weight: 300;
+	margin-top: 2.5em;
+	margin-left: 2.8em;
+}
+
+p a:link {
+	text-decoration: underline;
+}
+p a:visited {
+	color: black;
+}
+
+#homecell {
+	font-size: 28pt;
+	font-weight: 100;
+	padding-left: .5ex;
+	padding-right: .5ex;
+	margin-left: 1.5ex;
+	margin-right: 1.5ex;
+	height: 1.5em;
+	width: 5.5em;
+	text-align: center;
+
+	transition: all .7s ease-in-out;
+	-o-transition: all .7s ease-in-out;
+	-ms-transition: all .7s ease-in-out;
+	-moz-transition: all .7s ease-in-out;
+	-webkit-transition: all .7s ease-in-out;
+
+	transform: translateY(-200px);
+	-o-transform: translateY(-200px);
+	-ms-transform: translateY(-200px);
+	-moz-transform: translateY(-200px);
+	-webkit-transform: translateY(-200px);
+}
+a:link {
+	text-decoration: none;
+	color: black;
+}
+#homecell.show {
+	transform: translateY(0px);
+	-o-transform: translateY(0px);
+	-ms-transform: translateY(0px);
+	-moz-transform: translateY(0px);
+	-webkit-transform: translateY(0px);
+	color: white;
+	background-color: black;
+}
+#sidebar {
+	font-weight: 100;
+	vertical-align: top;
+	width: 10em;
+	height: 100%;
+
+	transform: translateX(-500px);
+	-o-transform: translateX(-500px);
+	-ms-transform: translateX(-500px);
+	-moz-transform: translateX(-500px);
+	-webkit-transform: translateX(-500px);
+
+	transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+}
+#sidebar.show {
+	transform: translateX(0px);
+	-o-transform: translateX(0px);
+	-ms-transform: translateX(0px);
+	-moz-transform: translateX(0px);
+	-webkit-transform: translateX(0px);
+}
+#sidebar a:link {
+	font-size: 24pt;
+	padding-left: .5ex;
+	padding-right: 1ex;
+	margin-left: 1.5ex;
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+}
+#sidebar a {
+	transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+}
+#sidebar a:visited {
+	color: black;
+}
+#sidebar a:hover {
+	color: white;
+	background-color: black;
+}
+#sidebar a:active {
+	color: white;
+}
+
+#contact {
+	border: 1px solid #ffffff;
+	padding: 1ex;
+
+	color: white;
+
+	transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+
+	line-height: 150%
+}
+
+#contact a {
+	transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+}
+
+#contact.show {
+	color: black;
+	border: 1px solid #666666;
+}
+#contact a:visited {
+	color: black;
+}
+
+#content {
+	font-size: 14pt;
+	font-family: "Open Sans", sans-serif;
+	color: white;
+
+	transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-webkit-transition: all .4s ease-in-out;
+
+}
+#content p {
+	margin-left: 5em;
+	margin-right: 5em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#content h1+p {
+	margin-top: 0em;
+}
