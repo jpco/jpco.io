@@ -44,6 +44,7 @@ p a:visited {
 	margin-left: 1.5ex;
 	margin-right: 1.5ex;
 	height: 1.5em;
+	line-height: 1.5em;
 	width: 5.5em;
 	text-align: center;
 
@@ -59,6 +60,7 @@ p a:visited {
 	-moz-transform: translateY(-200px);
 	-webkit-transform: translateY(-200px);
 }
+
 a:link {
 	text-decoration: none;
 	color: black;
@@ -72,11 +74,14 @@ a:link {
 	color: white;
 	background-color: black;
 }
-#sidebar {
+
+#links {
 	font-weight: 100;
 	vertical-align: top;
-	width: 10em;
-	height: 100%;
+	width: 15em;
+
+	padding-left: 5px;
+	padding-top: 5px;
 
 	transform: translateX(-500px);
 	-o-transform: translateX(-500px);
@@ -90,14 +95,14 @@ a:link {
 	-moz-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
 }
-#sidebar.show {
+#links.show {
 	transform: translateX(0px);
 	-o-transform: translateX(0px);
 	-ms-transform: translateX(0px);
 	-moz-transform: translateX(0px);
 	-webkit-transform: translateX(0px);
 }
-#sidebar a:link {
+#links a:link {
 	font-size: 24pt;
 	padding-left: .5ex;
 	padding-right: 1ex;
@@ -105,25 +110,28 @@ a:link {
 	margin-top: 1ex;
 	margin-bottom: 1ex;
 }
-#sidebar a {
+#links a {
 	transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	-ms-transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
 }
-#sidebar a:visited {
+#links a:visited {
 	color: black;
 }
-#sidebar a:hover {
+#links a:hover {
 	color: white;
 	background-color: black;
 }
-#sidebar a:active {
+#links a:active {
 	color: white;
 }
 
 #contact {
+	position: fixed;
+	bottom: 20px;
+	left: 20px;
 	border: 1px solid #ffffff;
 	padding: 1ex;
 
@@ -154,7 +162,16 @@ a:link {
 	color: black;
 }
 
+#sidebar {
+	float: left;
+	height: 100%;
+	width: 20%;
+}
+
 #content {
+	float: left;
+	width: 80%;
+
 	font-size: 14pt;
 	font-family: "Open Sans", sans-serif;
 	color: white;
