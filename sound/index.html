@@ -1,6 +1,17 @@
 <html>
 	<head><title>Jack Conger | Sound</title>
 		<link rel='stylesheet' type='text/css' href="/mainstyle.css">
+		<style>
+		tr.hiddenstuff > td {
+			color: white;
+
+			-webkit-transition: all .4s ease-in-out;
+			-o-transition: all .4s ease-in-out;
+			-ms-transition: all .4s ease-in-out;
+			-moz-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+		}
+		</style>
 		<script>
 			function loadit() {
 				document.getElementById('homecell').className += " show";
@@ -10,6 +21,18 @@
 				document.getElementById('homelink').style.background = "black";
 				document.getElementById('content').style.color = "black";
 			}
+
+/*			function showelement(elm) {
+				celms = elm.getElementsByTagName('td');
+				celmsl = celms.length;
+				for(int i = 0; i < celmsl; i++) {
+					celms[i].color = "black";
+				}
+			} */
+
+/*			function hideelement(elm) {
+				elm.style.color = "white";
+			} */
 		</script>
 	</head>
 	<body onload="loadit()">
@@ -32,9 +55,9 @@
 
 <h1>Jack Conger: Theatre Artist</h1>
 
-<h2>Current Projects</h2>
+<h2 style="margin-top:0em;">Current Projects</h2>
 
-<p>Hi! Right now I am working on the fight direction for <b>Neighborhood 3: Requisition of Doom</b>
+<p>Right now I am working on the fight direction for <b>Neighborhood 3: Requisition of Doom</b>
 directed by <a href="http://www.michaeljosephhanley.com">Michael Hanley</a> and produced by the
 University of Washington's UTS (Undergraduate Theatre Society) (link in the left sidebar).</p>
 
@@ -45,7 +68,7 @@ by Neil Bartlett and directed by Rachel Perlot.</p>
 Elizabeth Schiffler, and after that, I will design sound for <b>On the Verge</b> by Eric Overmyer,
 directed by Rosalind Phelps.</p>
 
-<h2>Full Projects List</h2>
+<!-- <h2>Full Projects List</h2> -->
 
 <!-- end content -->
 		</div>
