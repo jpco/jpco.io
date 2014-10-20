@@ -35,6 +35,9 @@ p a:link {
 p a:visited {
 	color: black;
 }
+p a.b {
+	font-weight: bold;
+}
 
 #homecell {
 	font-size: 28pt;
