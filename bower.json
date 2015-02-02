@@ -1,0 +1,23 @@
+{
+  "name": "personal-site",
+  "version": "0.0.0",
+  "main": "index.html",
+  "authors": [
+    "jpco"
+  ],
+  "license": "MIT",
+  "homepage": "www.jpconger.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#~0.5.4",
+    "webcomponentsjs": "~0.5.4",
+    "core-animation": "Polymer/core-animation#~0.5.4"
+  }
+}
