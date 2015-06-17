@@ -1,78 +1,85 @@
-<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/polymer/polymer.html">
+<link rel="import" href="/bower_components/iron-flex-layout/iron-flex-layout.html">
+
 <link rel="import" href="home-cell.html">
 <link rel="import" href="contact-cell.html">
 
-<polymer-element name="side-bar" attributes="xtitle">
+<dom-module id="side-bar">
+	<style>
+		:host {
+			display: block;
+			float: left;
+			height: 100%;
+			width: 20%;
+		}
+
+		a:link {
+			color: black;
+			text-decoration: none;
+		}
+
+		polyfill-next-selector { content: 'a:link'; }
+		::content a:link {
+			color: black;
+			text-decoration: none;
+		}
+		#links {
+			@apply(--layout-vertical);
+			font-weight: 100;
+			vertical-align: top;
+			padding-left: 5px;
+			padding-top: 5px;
+			width: 90%;
+		}
+		polyfill-next-selector { content: '#links a'; }
+		#links ::content a {
+			-o-transition: all .4s ease-in-out;
+			-ms-transition: all .4s ease-in-out;
+			-moz-transition: all .4s ease-in-out;
+			-webkit-transition: all .4s ease-in-out;
+			transition: all .4s ease-in-out;
+		}
+		polyfill-next-selector { content: '#links a:link'; }
+		#links ::content a:link {
+			font-size: 24pt;
+			padding-left: .5ex;
+			padding-right: 1ex;
+			margin-left: 1.5ex;
+		}
+		polyfill-next-selector { content: '#links a:visited'; }
+		#links ::content a:visited {
+			color: black;
+		}
+		polyfill-next-selector { content: '#links a:hover'; }
+		#links ::content a:hover {
+			color: white;
+			background-color: black;
+		}
+		polyfill-next-selector { content: '#links a:active'; }
+		#links ::content a:active {
+			color: white;
+		}
+	</style>
+
 	<template>
-		<style>
-			:host {
-				display: block;
-				float: left;
-				height: 100%;
-				width: 20%;
-			}
-
-			a:link {
-				color: black;
-				text-decoration: none;
-			}
-
-			polyfill-next-selector { content: 'a:link'; }
-			::content a:link {
-				color: black;
-				text-decoration: none;
-			}
-			#links {
-				font-weight: 100;
-				vertical-align: top;
-				width: 15em;
-				padding-left: 5px;
-				padding-top: 5px;
-				/* transform & transition */
-			}
-			polyfill-next-selector { content: '#links a'; }
-			#links ::content a {
-				-o-transition: all .4s ease-in-out;
-				-ms-transition: all .4s ease-in-out;
-				-moz-transition: all .4s ease-in-out;
-				-webkit-transition: all .4s ease-in-out;
-				transition: all .4s ease-in-out;
-			}
-			polyfill-next-selector { content: '#links a:link'; }
-			#links ::content a:link {
-				font-size: 24pt;
-				padding-left: .5ex;
-				padding-right: 1ex;
-				margin-left: 1.5ex;
-			}
-			polyfill-next-selector { content: '#links a:visited'; }
-			#links ::content a:visited {
-				color: black;
-			}
-			polyfill-next-selector { content: '#links a:hover'; }
-			#links ::content a:hover {
-				color: white;
-				background-color: black;
-			}
-			polyfill-next-selector { content: '#links a:active'; }
-			#links ::content a:active {
-				color: white;
-			}
-		</style>
 		<home-cell id="homecell">{{xtitle}}</home-cell>
-		<div id="links" vertical layout>
+		<div id="links">
 			<content select="a"></content>
 		</div>
 		<contact-cell id="contact"></contact-cell>
 	</template>
+
 	<script>
 		Polymer({
-			xtitle: "JPCo",
+			is: "side-bar",
 			ready: function() {
-				if(this.xtitle.length > 10) {
+/*				if(this.xtitle.length > 10) {
 					this.$.homecell.style.width = "6em";
-				}
+				} */
+			},
+			hostAttributes: {
+				xtitle: "JPCo"
 			}
 		});
 	</script>
-</polymer-element>
+</dom-module>
