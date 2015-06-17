@@ -68,21 +68,3 @@ a:link {
 #content h1+p {
 	margin-top: 0em;
 }
-a img {
-	border: 2px solid #ffffff;
-
-	transition: all .6s ease-out;
-	-o-transition: all .6s ease-out;
-	-ms-transition: all .6s ease-out;
-	-moz-transition: all .6s ease-out;
-	-webkit-transition: all .6s ease-out;
-
-	opacity: 0;
-}
-a img.show {
-	opacity: 1;
-}
-
-a img:hover {
-	border: 2px solid #000000;
-}

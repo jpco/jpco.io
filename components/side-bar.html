@@ -2,7 +2,7 @@
 <link rel="import" href="home-cell.html">
 <link rel="import" href="contact-cell.html">
 
-<polymer-element name="side-bar">
+<polymer-element name="side-bar" attributes="xtitle">
 	<template>
 		<style>
 			:host {
@@ -59,7 +59,7 @@
 				color: white;
 			}
 		</style>
-		<home-cell id="homecell">JPCo</home-cell>
+		<home-cell id="homecell">{{xtitle}}</home-cell>
 		<div id="links" vertical layout>
 			<content select="a"></content>
 		</div>
@@ -67,7 +67,12 @@
 	</template>
 	<script>
 		Polymer({
-			
+			xtitle: "JPCo",
+			ready: function() {
+				if(this.xtitle.length > 10) {
+					this.$.homecell.style.width = "6em";
+				}
+			}
 		});
 	</script>
 </polymer-element>

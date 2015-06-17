@@ -1,0 +1,73 @@
+<link rel="import" href="../bower_components/polymer/polymer.html">
+
+<polymer-element name="show-selector">
+	<template>
+		<link rel="stylesheet" type="text/css" href="/mainstyle.css">
+		<style>
+			img.poster {
+				width: 220px;
+				border: 2px solid #ffffff;
+
+				transition: all .6s ease-out;
+				-o-transition: all .6s ease-out;
+				-ms-transition: all .6s ease-out;
+				-moz-transition: all .6s ease-out;
+				-webkit-transition: all .6s ease-out;
+
+				/* opacity: 0; */
+			}
+
+			h2.postert {
+				margin-top:0em;
+				text-align:left;
+				float:left;
+			}
+
+			a.righted {
+				text-algin:right;
+				float:right;
+				margin-right:5em;
+
+/*				transition: all .6s ease-out;
+				-o-transition: all .6s ease-out;
+				-ms-transition: all .6s ease-out;
+				-moz-transition: all .6s ease-out;
+				-webkit-transition: all .6s ease-out; */
+			}
+
+			hr.titlesep {
+				clear: both;
+				visibility: hidden;
+			}
+
+			img.poster.show {
+				opacity: 1;
+			}
+			img:hover {
+				border: 2px solid #000000;
+			}
+		</style>
+<div on-mouseover="onHovered" on-mouseout="onUnhovered">
+<h2 class="postert">Recent Projects</h2>
+<a class="righted" id="viewall">View all</a>
+<hr class="titlesep" />
+
+<p style="margin-left:4em;margin-right:4em;">
+<a href="/sound/"><img class="poster" src="/sound/imgs/projscorp_unscaled.jpg" /></a>
+<a href="/sound/"><img class="poster" src="/sound/imgs/doubletrouble.jpg" /></a>
+<a href="/sound/"><img class="poster" src="/sound/imgs/dorian.gif" /></a>
+<a href="/sound/"><img class="poster" src="/sound/imgs/cabaret.png" /></a>
+</p>
+</div>
+	</template>
+	<script>
+		Polymer('show-selector', {
+			ready: function() {
+				imgs = document.getElementsByTagName('img');
+				for (i = 0; i < imgs.length; i++) {
+					imgs[i].className += "show";
+				}
+			},
+		});
+	</script>
+</polymer-element>
