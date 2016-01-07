@@ -1,21 +1,32 @@
 <html>
 <head>
-<script src="/bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
 <link rel='icon' href='/svg/icordr2.ico' />
-<link rel="import"
-href="/bower_components/polymer/polymer.html">
-<link rel="import"
-href="/components/side-bar.html">
-<link rel='stylesheet' type='text/css' href="/mainstyle.css">
-<link rel='stylesheet' type='text/css' href="portstyle.css">
+<link rel='stylesheet' type='text/css' href="../mainstyle.css">
+<!-- link rel='stylesheet' type='text/css' href="portstyle.css" -->
 <title>Jack Conger | UW Honors</title>
+<script type="text/javascript">
+function loadit() {
+    document.getElementById('homecell').classList.add('show');
+}
+</script>
 </head>
-<body unresolved>
-<side-bar xtitle="Jack Conger">
-<a href="honors100.html">Honors 100</a>
-<a href="http://depts.washington.edu/uwhonors">UW Honors</a>
-</side-bar>
-<div id="content">
+<body onload="loadit()">
+<!-- begin sidebar -->
+		<div id="sidebar">
+
+    <!-- begin home cell -->
+        <div id="homecell">
+            <link rel="icon" type="image/png" href="../favicon.png" />
+            <a id="link" href="../">Jack Conger</a>
+        </div>
+    <!-- end home cell -->
+		<a href="honors100.html">Honors 100</a>
+		<a href="http://depts.washington.edu/uwhonors">UW Honors</a>
+        </div>
+<!-- end sidebar -->
+		<div id="content" style="color:black;">
+<!-- begin content -->
+
 <h1>UW Honors Portfolio</h1>
 <p>This is the honors portfolio of Jack Conger, a junior at the University of Washington double majoring in mathematics (comprehensive) and computer science.</p>
 <p>Each section is a class I've taken at the UW; aside from Honors 100, the entries are in the form of one artifact and one annotation each.</p>
@@ -37,6 +48,8 @@ href="/components/side-bar.html">
 <p>Math 336 marked the end of what I am convinced was the hardest series I will take at the UW. Reaching the early graduate level, math 33X covers six 300- and 400-level mathematics classes, and leaves only 27 credits required to finish the comprehensive mathematics major.</p>
 
 <p>One major aspect of the math 13X and 33X series is the process of beginning to think like a postgraduate mathematician. And, of course, part of this is research. Because of this, math 336 has as a final component a research paper dedicated to the short explanation of some journal article and the mathematical framework required to understand that article. I chose to write about combinatorics on words, a relatively new field in math dedicated to studying the types of sequences created by certain sets of symbols. My research is summarized in my <a href="336paper.pdf">paper</a> (<a href="336paper.tex">source</a>).</p>
+
+
 </div>
 </body>
 </html>

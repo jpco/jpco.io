@@ -1,41 +1,32 @@
 <html>
 <head>
-<script src="/bower_components/webcomponentsjs/webcomponents.min.js"></script>
-<link rel='icon' href='/icordr2.ico' />
-<link rel="import"
-href="/bower_components/polymer/polymer.html">
-<link rel="import"
-href="/components/side-bar.html">
-<link rel='stylesheet' type='text/css'
-href="/mainstyle.css">
-<link rel='stylesheet' type='text/css'
-href="portstyle.css">
-<title>Jack Conger | UW Honors 100 Assignments</title>
-<style>
-.intro {
-font-style: italic;
-margin-left: 8em !important;
-margin-right: 8em !important;
+<link rel='icon' href='/svg/icordr2.ico' />
+<link rel='stylesheet' type='text/css' href="../mainstyle.css">
+<!-- link rel='stylesheet' type='text/css' href="portstyle.css" -->
+<title>Jack Conger | UW Honors</title>
+<script type="text/javascript">
+function loadit() {
+    document.getElementById('homecell').classList.add('show');
 }
-.fyp {
-margin-left: 8em;
-margin-right: 8em;
-width: 70%;
-}
-.fyp .emph {
-font-weight: bold;
-}
-.fyp .listed {
-font-style: italic;
-}
-</style>
+</script>
 </head>
-<body unresolved>
-<side-bar xtitle="Jack Conger">
-<a href="/portfolio/">Portfolio</a>
-<a href="http://depts.washington.edu/uwhonors">UW Honors</a>
-</side-bar>
-<div id="content">
+<body onload="loadit()">
+<!-- begin sidebar -->
+		<div id="sidebar">
+
+    <!-- begin home cell -->
+        <div id="homecell">
+            <link rel="icon" type="image/png" href="../favicon.png" />
+            <a id="link" href="../">Jack Conger</a>
+        </div>
+    <!-- end home cell -->
+		<a href=".">Portfolio</a>
+		<a href="http://depts.washington.edu/uwhonors">UW Honors</a>
+        </div>
+<!-- end sidebar -->
+		<div id="content" style="color:black;">
+<!-- begin content -->
+
 <h1>UW Honors 100 Assignments</h1>
 <p>My first quarter at the University of Washington, I took Honors 100 as part of my interdisciplinary honors requirements. I completed a number of assignments for that class, some of which are included here. I won't alter them, even though things like my four-year plan have changed drastically from how I thought they'd be at the time.</p>
 <h2>First Reflection</h2>
@@ -118,6 +109,29 @@ font-style: italic;
 <p>This will be extremely helpful as time goes by. As I was surprised to discover, there is a detriment to the simply huge amount of various activities and projects at the UW: it is often extremely difficult to know what events are happening. It can be difficult to find the right mailing lists to be a part of, or the right people to follow, until one has already stumbled into the events that they wanted to take part in originally. So far, I have had some success finding these, but it has taken a good amount of luck to do so. This is one of the biggest things I hope to do by the end of my first year: I want to have a good number of connections and good communities to be in. Doing that will be an important part of gaining the skills and friends I hope to have when I graduate and am ready to move into the real world.</p>
 
 <p><a href="javascript:window.scrollTo(0,0);">Scroll to Top</a></p>
+
+
+<h1>UW Honors Portfolio</h1>
+<p>This is the honors portfolio of Jack Conger, a junior at the University of Washington double majoring in mathematics (comprehensive) and computer science.</p>
+<p>Each section is a class I've taken at the UW; aside from Honors 100, the entries are in the form of one artifact and one annotation each.</p>
+<h2>Honors 100</h2>
+<p>I took Honors 100 in my first quarter at the University of Washington, fall of 2012. The assignments for that class can be found <a href="honors100.html" >here</a>.</p>
+<h2>CSE 143</h2>
+<h2>Math 136</h2>
+
+<p><a href="136finalreport.pdf">This paper</a> (.pdf, source <a href="136finalreport.tex">here</a>) is in a sense the final project for the year-long Math 134-135-136 ("Honors Accelerated Calculus") series I took during my freshman year. The three-quarters-long series focuses on the material from the freshman calculus as well as Math 307 and 308. However, the major learning experience for myself during this course was its intense proof-based focus: previously, my math classes had been focused on formulae and ideas, and not the method of their formulation.</p>
+
+<p>This series was the first time I was truly made to deeply understand the mental and mathematical path to the conclusions I was being taught. At the end of the course, this project was assigned to groups to connect ideas from linear algebra to a more specific tool (genetics, Markov chains, etc., or our own choice) using our own research. This tool would need to be defined and understood before being used. Our project (details in the document itself, of course,) happened to deal with Markov chains, oncology, and (some) programming; in addition to having to deeply understand what each of these (and especially Markov chains) are, I had to understand how each are connected to each other.</p>
+
+<h2>Honors 232</h2>
+<p>Honors 232, &#8220;Piracy&#8221;, represented my first and only academic encounter with the infamous Clarke Speed. Before I entered the class, I knew many people who had taken classes with him before, and their opinion of him was very polarized&mdash;which, knowing him, is the norm with his past students. My curiosity, and the rumours he'd been fired, drove me to the class.</p>
+
+<p>The course itself was good. Primarily, I think it was worthwhile as an exercise in a non-typical kind of discourse, driven mostly by key terms and very exploratory. Some of the material itself, and especially the in-class discussions, was frustrating. One discussion in particular was somewhat about feminism and was very frustrating, which led to my artifact for this class: my <a href="ClSpAccu.pdf">final paper</a> (.pdf, source <a href="ClSpAccu.odt">here</a>).
+</p>
+<h2>Math 336</h2>
+<p>Math 336 marked the end of what I am convinced was the hardest series I will take at the UW. Reaching the early graduate level, math 33X covers six 300- and 400-level mathematics classes, and leaves only 27 credits required to finish the comprehensive mathematics major.</p>
+
+<p>One major aspect of the math 13X and 33X series is the process of beginning to think like a postgraduate mathematician. And, of course, part of this is research. Because of this, math 336 has as a final component a research paper dedicated to the short explanation of some journal article and the mathematical framework required to understand that article. I chose to write about combinatorics on words, a relatively new field in math dedicated to studying the types of sequences created by certain sets of symbols. My research is summarized in my <a href="336paper.pdf">paper</a> (<a href="336paper.tex">source</a>).</p>
 </div>
 </body>
 </html>
