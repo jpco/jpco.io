@@ -7,10 +7,18 @@
 }
 #content p {
 	margin-left: 5em;
-	margin-right: 5em;
+	margin-right: 15em;
 	margin-top: 2em;
 	margin-bottom: 2em;
 }
-#sidebar {
-	width: 17em;
+
+.fyp {
+	margin-left: 9em;
+}
+
+.fyp td {
+	padding-right: 3em;
+}
+.fyp .emph {
+	font-weight: 600;
 }

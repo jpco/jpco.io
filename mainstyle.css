@@ -1,6 +1,6 @@
 /* external CSS used for the main content pages of the site. */
 
-@import url(http://fonts.googleapis.com/css?family=Raleway:100,300|Open+Sans:300italic,300,600);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300|Open+Sans:300italic,300,500,600);
 
 body {
 	font-family: 'Raleway', sans-serif;
