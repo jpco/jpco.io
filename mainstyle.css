@@ -2,29 +2,72 @@
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,300|Open+Sans:300italic,300,500,600);
 
+.banner {
+	width: 100%;
+	text-align: center;
+	color: white;
+	margin: 0;
+	padding-top: 2em;
+	padding-bottom: 2em;
+	margin-bottom: 1ex;
+}
+
+.introp {
+	font-style: italic;
+	padding-left: 2em;
+	padding-right: 2em;
+}
+/* I can't believe I have to specify this */
+.introp em {
+	font-style: normal;
+}
+
+@media screen and (min-width: 800px) {
+	.banner {
+		margin-top: 1em;
+		width: 80%;
+	}
+	.introp {
+		padding-left: 5em;
+		padding-right: 5em;
+	}
+}
+
 body {
 	font-family: 'Raleway', sans-serif;
 	font-weight: 100;
+	color: #666;
+	margin-left: 0;
+	margin-right: 0;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	font-family: 'Raleway', sans-serif;
 	margin-top: 1em;
 	margin-left: 1ex;
 }
+
+h1 + h2 {
+	margin-top: 0;
+}
+
 h1 {
-	font-weight: 100;
 	display: inline-block;
+	font-weight: 100;
 	padding-left: 0;
 	padding-right: 0;
-}
-h1.black {
 	color: white;
 	background-color: black;
+}
+h3 {
+	font-weight: 300;
+	color: #666;
+	margin-left: 1em;
 }
 h2 {
 	font-weight: 300;
 	margin-top: 2.5em;
+	color: #111;
 }
 
 @media screen and (min-width: 600px) {
@@ -35,6 +78,10 @@ h2 {
         padding-left: 1ex;
         padding-right: 1ex;
     }
+    h1.banner {
+	padding-left: 0;
+	padding-right: 0;
+    }
     h2 {
         margin-left: 2.8em;
     }
@@ -44,7 +91,7 @@ p a:link {
 	text-decoration: underline;
 }
 p a:visited {
-	color: black;
+	color: #666;
 }
 p a.b {
 	font-weight: bold;
@@ -52,7 +99,7 @@ p a.b {
 
 a:link {
 	text-decoration: none;
-	color: black;
+	color: #666;
 }
 
 #homecell {
@@ -92,7 +139,7 @@ a:link {
 }
 
 #sidebar {
-	font-size: 24pt;
+    font-size: 24pt;
     line-height: 1.5em;
     text-align: center;
 
@@ -109,6 +156,7 @@ a:link {
 
     line-height: 1.2;
     padding-left: 1ex;
+    padding-right: 1ex;
     margin-right: 1ex;
     margin-top: .2em;
 
@@ -131,18 +179,19 @@ a:link {
 
     #sidebar > a {
         width: 90%;
+    	padding-right: 0;
     }
 }
 
 
 #sidebar > a:link {
     text-decoration: none;
-    color: black;
+    color: #666;
 }
 
 #sidebar > a:visited {
     text-decoration: none;
-    color: black;
+    color: #666;
 }
 
 #sidebar > a:hover {
@@ -155,14 +204,13 @@ a:link {
 
 	font-size: 14pt;
 	font-family: "Open Sans", sans-serif;
-	color: white;
+	color: #222;
 
 	transition: all .4s ease-in-out;
 	-o-transition: all .4s ease-in-out;
 	-ms-transition: all .4s ease-in-out;
 	-moz-transition: all .4s ease-in-out;
 	-webkit-transition: all .4s ease-in-out;
-
 }
 
 #content p {
