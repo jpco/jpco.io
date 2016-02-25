@@ -179,7 +179,8 @@ a:link {
 
     #sidebar > a {
         width: 90%;
-    	padding-right: 0;
+        padding-right: 0;
+        margin-right: 1ex;
     }
 }
 
