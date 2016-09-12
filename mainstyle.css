@@ -1,4 +1,4 @@
-/* external CSS used for the main content pages of the site. */
+/* external CSS used for the main content-innerages of the site. */
 
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,300|Open+Sans:300italic,300,500,600);
 
@@ -16,6 +16,7 @@
 	font-style: italic;
 	padding-left: 2em;
 	padding-right: 2em;
+	padding-top: 1.5em;
 }
 /* I can't believe I have to specify this */
 .introp em {
@@ -39,6 +40,8 @@ body {
 	color: #666;
 	margin-left: 0;
 	margin-right: 0;
+	position: absolute;
+	width: 100%;
 }
 
 h1, h2, h3 {
@@ -59,21 +62,77 @@ h1 {
 	color: white;
 	background-color: black;
 }
+
+h1.post-title {
+	margin-bottom: 1ex;
+}
+
+h2.post-title {
+	margin-top: 1em;
+}
+
+h1 + h4, .post-date {
+	margin-top: 0;
+	margin-left: 3em;
+	font-size: 14px;
+}
+
+span.tags {
+	color: #888;
+}
+
+span.tags a {
+	color: #888;
+}
+
+#content-inner hr {
+	border: 0;
+	height: 1px;
+	background: #aaa;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 4em;
+	margin-right: 4em;
+}
+
 h3 {
 	font-weight: 300;
 	color: #666;
 	margin-left: 1em;
 }
+
 h2 {
 	font-weight: 300;
 	margin-top: 2.5em;
 	color: #111;
 }
 
+h2 a {
+	color: #000;
+}
+
+#content-inner pre {
+	font-family: mono;
+	font-size: 14px;
+	border-radius: 5px;
+	background-color: #f3f3f3;
+	padding: 1em;
+	overflow-x: auto;
+}
+
+pre code tt {
+	font-family: mono;
+}
+
+#content-inner code {
+	font-family: mono;
+	font-size: 14px;
+	border-radius: 3px;
+	background-color: #eaeaea;
+	padding: .2em;
+}
+
 @media screen and (min-width: 600px) {
-    h1, h2 {
-        margin-left: 1.5em;
-    }
     h1 {
         padding-left: 1ex;
         padding-right: 1ex;
@@ -214,11 +273,14 @@ a:link {
 	-webkit-transition: all .4s ease-in-out;
 }
 
-#content p {
-    margin-top: 2em;
-    margin-bottom: 2em;
+#content-inner {
     margin-left: 1em;
     margin-right: 1em;
+}
+
+#content-inner p {
+    margin-top: 1.5em;
+    margin-bottom: 1em;
 }
 
 @media screen and (min-width: 800px) {
@@ -229,14 +291,17 @@ a:link {
 }
 
 @media screen and (min-width: 600px) {
-    #content p {
+    #content-inner {
         margin-left: 5em;
         margin-right: 5em;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    #content p {
+    h1, h2, h3 {
+        margin-left: -1.5em;
+    }
+    #content-inner {
         margin-right: 15em;
     }
 }
