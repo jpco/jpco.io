@@ -1,27 +1,25 @@
 <!DOCTYPE html>
+<META charset="utf-8" />
 <html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<head>
 		<title>Jack Conger</title>
-		<link href='https://fonts.googleapis.com/css?family=Raleway:100|Open+Sans:300' rel='stylesheet' type='text/css'>
+		<link href='/fonts.css' rel='stylesheet' type='text/css'>
 		<link rel='icon' href='svg/icordr2.ico' />
 		<style>
 			body { 
 				font-family: 'Raleway', sans-serif;
+				font-weight: 100;
 			}
 			#title {
 				color: white;
+				background-color: black;
 				margin-right: auto;
 				margin-left: auto;
 				margin-top: 20pt;
 				font-size: 60pt;
 				max-width: 6em;
 				text-align: center;
-				-webkit-transition: all .4s ease-in-out;
-				-o-transition: all .4s ease-in-out;
-				-ms-transition: all .4s ease-in-out;
-				-moz-transition: all .4s ease-in-out;
-				transition: all .4s ease-in-out;
 				-webkit-user-select: none;
 				-moz-user-select: none;
 				-ms-user-select: none;
@@ -29,73 +27,45 @@
 				user-select: none;
 				cursor: default;
 			}
-            @media screen and (min-width: 400px) and (min-height: 550px) {
-                #title {
-                    margin-top: 130pt;
-                }
-            }
+		    @media screen and (min-width: 400px) and (min-height: 550px) {
+			#title {
+			    margin-top: 130pt;
+			}
+		    }
 			#navbar {
-				color: white;
+				color: black;
 				text-align: center;
 				max-width: 900px;
 				margin-left: auto;
 				margin-right: auto;
 				font-size: 30pt;
-                padding-top: 1ex;
+				padding-top: 1ex;
 			}
 			#sep {
-				color: white;
 				color: #bbbbbb;
 				display: none;
-				-webkit-transition: all .5s ease-in-out;
-				-o-transition: all .5s ease-in-out;
-				-ms-transition: all .5s ease-in-out;
-				-moz-transition: all .5s ease-in-out;
-				transition: all .5s ease-in-out;
 			}
-            @media screen and (min-width: 900px) {
-                #sep {
-                    display: inline-block;
-                }
-            }
+		    	@media screen and (min-width: 500px) {
+				#sep {
+					display: inline-block;
+				}
+			}
 			.navlink {
 				color: #666;
 				display: inline-block;
 				margin-left: 1.5ex;
 				margin-right: 1.5ex;
-                margin-top: 1ex;
-                margin-bottom: 1ex;
+				margin-top: 1ex;
+				margin-bottom: 1ex;
 				padding-left: .5ex;
 				padding-right: .5ex;
 				text-align: center;
-			}
-			#computers {
-				-webkit-transition: all .5s ease-in-out;
-				-o-transition: all .5s ease-in-out;
-				-ms-transition: all .5s ease-in-out;
-				-moz-transition: all .5s ease-in-out;
-				transition: all .5s ease-in-out;
-			}
-			#theatre {
-				-webkit-transition: all .7s ease-in-out;
-				-o-transition: all .7s ease-in-out;
-				-ms-transition: all .7s ease-in-out;
-				-moz-transition: all .7s ease-in-out;
-				transition: all .7s ease-in-out;
-			}
-			.gethidden {
-				-o-transform: translateY(-1000px);
-				-ms-transform: translateY(-1000px);
-				-webkit-transform: translateY(-1000px);
-				-moz-transform: translateY(-1000px);
-				transform: translateY(-1000px);
-			}
-			#sep.gethidden {
-				-o-transform: scale(0);
-				-ms-transform: scale(0);
-				-webkit-transform: scale(0);
-				-moz-transform: scale(0);
-				transform: scale(0);
+
+				transition: all .4s ease-in-out;
+				-o-transition: all .4s ease-in-out;
+				-ms-transition: all .4s ease-in-out;
+				-moz-transition: all .4s ease-in-out;
+				-webkit-transition: all .4s ease-in-out;
 			}
 			a:link {
 				text-decoration: none;
@@ -105,60 +75,14 @@
 				color: white;
 				background-color: black;
 			}
-			#bio {
-				font-size: 14pt;
-				font-family: "Open Sans", sans-serif;
-				text-align: center;
-				visibility: hidden;
-				max-width: 30em;
-				margin-left: auto;
-				margin-right: auto;
-				color: #222;
-
-				-webkit-transition: all .4s ease-in-out;
-				-moz-transition: all .4s ease-in-out;
-				-ms-transition: all .4s ease-in-out;
-				-o-transition: all .4s ease-in-out;
-				transition: all .4s ease-in-out;
-			}
 		</style>
-		<script>
-			function loadit() {
-				// fade-in
-				document.getElementById('title').style.background = "black";
-				document.getElementById('sep').style.color = "#bbbbbb";
-				document.getElementById('navbar').style.color = "black";
-			}
-			function follow_link(destination) {
-				document.getElementById('title').addEventListener("transitionend", function(){ 
-					window.location.href = destination;
-				});
-
-				document.getElementById('title').className += " gethidden";
-				document.getElementById('computers').className += " gethidden";
-				document.getElementById('theatre').className += " gethidden";
-				document.getElementById('sep').className += " gethidden";
-
-			}
-			function bio_off() {
-				document.getElementById('bio').style.color = "white";
-				document.getElementById('bio').style.visibility = "hidden";
-			}
-			function bio_on() {
-				document.getElementById('bio').style.visibility = "visible";
-				document.getElementById('bio').style.color = "black";
-			}
-		</script>
 	</head>
-	<body id="body" onload="loadit();">
-		<div id="title" onmouseover="bio_on()" onmouseout="bio_off()">Jack Conger</div>
+	<body>
+		<div id="title">Jack Conger</div>
 		<div id="navbar">
-			<a class="navlink" id="computers" href="javascript:follow_link('sw')">Software Developer</a>
+			<a class="navlink" id="resume" href="/sw">Résumé</a>
 			<a id="sep">&#47;</a>
-			<a class="navlink" id="theatre" href="javascript:follow_link('sound')">Sound Designer</a>
+			<a class="navlink" id="blog" href="/blog">Blog</a>
 		</div>
-		<p id="bio">
-		My name is Jack Conger. I live in Seattle and attend the University of Washington, where I study mathematics and computer science. I am the assistant finance director for the Undergraduate Theatre Society at the UW, where I work as a sound designer, music director, and composer. This is my website.
-		</p>
 	</body>
 </html>

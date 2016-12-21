@@ -1,38 +1,4 @@
-/* external CSS used for the main content-innerages of the site. */
-
-@import url(https://fonts.googleapis.com/css?family=Raleway:100,300|Open+Sans:300italic,300,500,600);
-
-.banner {
-	width: 100%;
-	text-align: center;
-	color: white;
-	margin: 0;
-	padding-top: 2em;
-	padding-bottom: 2em;
-	margin-bottom: 1ex;
-}
-
-.introp {
-	font-style: italic;
-	padding-left: 2em;
-	padding-right: 2em;
-	padding-top: 1.5em;
-}
-/* I can't believe I have to specify this */
-.introp em {
-	font-style: normal;
-}
-
-@media screen and (min-width: 800px) {
-	.banner {
-		margin-top: 1em;
-		width: 80%;
-	}
-	.introp {
-		padding-left: 5em;
-		padding-right: 5em;
-	}
-}
+@import url(/fonts.css);
 
 body {
 	font-family: 'Raleway', sans-serif;
@@ -63,36 +29,10 @@ h1 {
 	background-color: black;
 }
 
-h1.post-title {
-	margin-bottom: 1ex;
-}
-
-h2.post-title {
-	margin-top: 1em;
-}
-
-h1 + h4, .post-date {
+h1 + h4 {
 	margin-top: 0;
 	margin-left: 3em;
 	font-size: 14px;
-}
-
-span.tags {
-	color: #888;
-}
-
-span.tags a {
-	color: #888;
-}
-
-#content-inner hr {
-	border: 0;
-	height: 1px;
-	background: #aaa;
-	margin-top: 2em;
-	margin-bottom: 2em;
-	margin-left: 4em;
-	margin-right: 4em;
 }
 
 h3 {
@@ -109,27 +49,6 @@ h2 {
 
 h2 a {
 	color: #000;
-}
-
-#content-inner pre {
-	font-family: mono;
-	font-size: 14px;
-	border-radius: 5px;
-	background-color: #f3f3f3;
-	padding: 1em;
-	overflow-x: auto;
-}
-
-pre code tt {
-	font-family: mono;
-}
-
-#content-inner code {
-	font-family: mono;
-	font-size: 14px;
-	border-radius: 3px;
-	background-color: #eaeaea;
-	padding: .2em;
 }
 
 @media screen and (min-width: 600px) {
@@ -169,26 +88,6 @@ a:link {
     line-height: 1.5em;
     color: white;
     background-color: black;
-
-    -o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-
-    -o-transform: translateY(-200px);
-    -ms-transform: translateY(-200px);
-    -moz-transform: translateY(-200px);
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
-}
-
-#homecell.show {
-    -o-transform: translateY(0px);
-    -ms-transform: translateY(0px);
-    -moz-transform: translateY(0px);
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
 }
 
 #homecell a {
@@ -221,11 +120,11 @@ a:link {
 
     text-align: left;
 
-	transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
+	transition: color .4s, background-color .4s ease-in-out;
+	-o-transition: color .4s, background-color .4s ease-in-out;
+	-ms-transition: color .4s, background-color .4s ease-in-out;
+	-moz-transition: color .4s, background-color .4s ease-in-out;
+	-webkit-transition: color .4s, background-color .4s ease-in-out;
 }
 
 @media screen and (min-width: 800px) {
@@ -263,14 +162,8 @@ a:link {
 	width: 100%;
 
 	font-size: 14pt;
-	font-family: "Open Sans", sans-serif;
+	font-family: "Open Sans", serif;
 	color: #222;
-
-	transition: all .4s ease-in-out;
-	-o-transition: all .4s ease-in-out;
-	-ms-transition: all .4s ease-in-out;
-	-moz-transition: all .4s ease-in-out;
-	-webkit-transition: all .4s ease-in-out;
 }
 
 #content-inner {
