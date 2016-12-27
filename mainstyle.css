@@ -60,9 +60,6 @@ h2 a {
 	padding-left: 0;
 	padding-right: 0;
     }
-    h2 {
-        margin-left: 2.8em;
-    }
 }
 
 p a:link {
@@ -176,6 +173,11 @@ a:link {
     margin-bottom: 1em;
 }
 
+#content-inner hr {
+	border-top: 1px solid #bbb;
+	border-bottom: none;
+}
+
 @media screen and (min-width: 800px) {
     #content {
         width: 80%;
@@ -188,6 +190,10 @@ a:link {
         margin-left: 5em;
         margin-right: 5em;
     }
+
+	#content-inner hr {
+		width: 50%;
+	}
 }
 
 @media screen and (min-width: 1200px) {
