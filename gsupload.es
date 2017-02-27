@@ -29,6 +29,7 @@ with open("'$src'/'$fi'", "r") as src:
   with open("'$dst'/'$fi'", "w") as dest:
     fdata = src.read()
     dest.write(htmlmin.minify(fdata, remove_comments=True, remove_empty_space=True))'
+      python -m csscompressor -o $dst/$fi $dst/$fi
     }
   }
 
@@ -42,4 +43,5 @@ with open("'$src'/'$fi'", "r") as src:
 }
 
 process-dir src dst
-gsutil cp -r -c -z html,css,ttf -a public-read -L upload.log dst/* gs://jpco-io-static/
+echo 'Uploading to GCS...'
+gsutil -m cp -r -c -z html,css,ttf -a public-read -L upload.log dst/* gs://jpco.io/
